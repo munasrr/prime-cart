@@ -11,7 +11,7 @@ import { Gutter } from '../../Gutter'
 import { HeaderNav } from '../Nav'
 
 import classes from './index.module.scss'
-import MobileNav from '../MobileNav'
+
 
 const HeaderComponent = ({ header }: { header: Header }) => {
   const pathname = usePathname()
@@ -28,7 +28,6 @@ const HeaderComponent = ({ header }: { header: Header }) => {
         </Link>
 
         <HeaderNav header={header} />
-        <MobileNav header={header} />
       </Gutter>
     </nav>
   )
